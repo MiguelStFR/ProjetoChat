@@ -1,7 +1,7 @@
 ﻿using System.Text.Json;
 using System.Text.Json.Serialization;
 
-namespace ProjetoChat.Configurations
+namespace ProjetoChat.Utils.Configurations
 {
     public class DateOnlyJsonConverter : JsonConverter<DateOnly>
     {

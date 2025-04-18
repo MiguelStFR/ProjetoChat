@@ -4,11 +4,11 @@ using ProjetoChat.Models;
 
 namespace ProjetoChat.Controllers
 {
-    public class PrivateMessagesController : ControllerBase
+    public class PrivateMessageController : ControllerBase
     {
         private readonly FirestoreDb _firestore;
 
-        public PrivateMessagesController(FirestoreDb firestore) => _firestore = firestore;
+        public PrivateMessageController(FirestoreDb firestore) => _firestore = firestore;
 
         private string GetConversationId(string userA, string userB)
         {

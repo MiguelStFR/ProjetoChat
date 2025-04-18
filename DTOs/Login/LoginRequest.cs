@@ -1,11 +1,11 @@
 ﻿using Google.Cloud.Firestore;
 
-namespace ProjetoChat.Models
+namespace ProjetoChat.DTOs.Login
 {
-    [FirestoreData]
     public class LoginRequest
     {
-        [FirestoreProperty]
+        public string Password { get; set; } = string.Empty;
+
         public string Username { get; set; } = string.Empty;
     }
 }
